@@ -1,5 +1,3 @@
-<br/>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/catalyst-3d/catalyst/refs/heads/main/branding/catalyst-small-light.png">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/catalyst-3d/catalyst/refs/heads/main/branding/catalyst-small-dark.png">
@@ -10,9 +8,7 @@ Resources for Mainsail
 <br/>
 <a href="https://prpl.wtf">prpl.wtf</a> <b>·</b>
 <a href="https://mainsail.xyz">mainsail.xyz</a>
-<br><br>
-
----
+<br>
 
 ### Themes
 
