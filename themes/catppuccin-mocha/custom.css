@@ -1,0 +1,249 @@
+:root {
+  --Primary:        #cba6f7;
+  --Secondary:      #45475a;
+  --Green:          #a6e3a1;
+  --Red:            #f38ba8;
+  --Warnings:       #fab387;
+  --Text:           #ffffff;
+  --DarkerText:     #bac2de;
+  --Background:     #1e1e2e;
+  --DarkBackground: #1e1e2e;
+  --Toolbars:       #181825;
+  --Sheets:         #1e1e2e;
+  --BorderRadius:   10px;
+}
+:root {
+  /*
+  | Catppuccin Mocha
+  | https://catppuccin.com
+ */
+  --Rosewater: rgb(245, 224, 220);
+  --Flamingo:  rgb(242, 205, 205);
+  --Pink:      rgb(245, 194, 231);
+  --Mauve:     rgb(203, 166, 247);
+  --Red:       rgb(243, 139, 168);
+  --Maroon:    rgb(235, 160, 172);
+  --Peach:     rgb(250, 179, 135);
+  --Yellow:    rgb(249, 226, 175);
+  --Green:     rgb(166, 227, 161);
+  --Teal:      rgb(148, 226, 213);
+  --Sky:       rgb(137, 220, 235);
+  --Sapphire:  rgb(116, 199, 236);
+  --Blue:      rgb(137, 180, 250);
+  --Lavender:  rgb(180, 190, 254);
+  --Text:      rgb(205, 214, 244);
+  --Subtext-1: rgb(186, 194, 222);
+  --Subtext-0: rgb(166, 173, 200);
+  --Overlay-2: rgb(147, 153, 178);
+  --Overlay-1: rgb(127, 132, 156);
+  --Overlay-0: rgb(108, 112, 134);
+  --Surface-2: rgb(88, 91, 112);
+  --Surface-1: rgb(69, 71, 90);
+  --Surface-0: rgb(49, 50, 68);
+  --Base:      rgb(30, 30, 46);
+  --Mantle:    rgb(24, 24, 37);
+  --Crust:     rgb(17, 17, 27);
+}
+.v-application {
+  --v-primary-base: var(--Primary) !important;
+  --v-anchor-base:  var(--Primary) !important;
+  --v-error-base:   var(--Red) !important;
+  --v-success-base: var(--Green) !important;
+  --v-warning-base: var(--Warnings) !important;
+  --v-panel-base:   var(--DarkBackground) !important;
+}
+.v-ripple__container {
+  color: #585b70;
+}
+
+
+
+
+/* Text color */
+.v-btn__content .v-toolbar__title,
+.text--darken-2,
+.subheading,
+.theme--dark.v-icon,
+.v-btn__content,
+.v-text-field__suffix,
+.theme--dark.v-input,
+.theme--dark.v-input input
+.theme--dark.v-input textarea {
+  color: var(--Text) !important;
+}
+
+
+/* Primary color */
+.v-application .primary,
+.v-application .info {
+  background-color: var(--Primary) !important;
+  border-color: var(--Primary) !important;
+}
+.v-application .primary--text,
+.v-application .blue--text {
+  color: var(--Primary) !important;
+  caret-color: var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot:focus-within {
+  border: thin solid var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo .v-input__control input {
+  caret-color: var(--Primary);
+}
+.theme--dark.v-color-picker .v-color-picker__input input {
+  border: thin solid var(--Primary);
+  color: var(--Text);
+}
+
+
+/* Secondary color */
+.v-application .secondary {
+  background-color: var(--Secondary) !important;
+  border-color: var(--Secondary) !important;
+}
+.theme--dark.v-chip {
+  color: var(--Text) !important;
+  background-color: var(--Secondary) !important;
+}
+
+
+/* Background and Toolbars */
+body,
+.v-overlay__scrim {
+  background-color: var(--Background) !important;
+}
+.v-sheet,
+.v-overlay__scrim {
+  border-color: var(--Background) !important;
+}
+.v-navigation-drawer__border {
+  display: none;
+}
+a[data-v-99ab1bec] {
+  border-left: solid var(--v-primary-base);
+  border-left-width: 0px;
+  transition: border-left-width .3s;
+  border-color: var(--v-primary-base);
+}
+a[data-v-99ab1bec]::before {
+  background-color: unset;
+  background: linear-gradient(to right, #313244, transparent)
+}
+.active-nav-item[data-v-99ab1bec] {
+  border-right: 0px;
+  border-left-width: 5px;
+}
+
+
+/* Darkest colors / grey darkend */
+.theme--dark.v-application {
+  background: var(--DarkBackground);
+  color: var(--Text);
+}
+.v-application .grey.darken-3 {
+  background-color: var(--DarkBackground) !important;
+  border-color: var(--DarkBackground) !important;
+}
+.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
+  background: var(--DarkBackground) !important;
+}
+.theme--dark.v-data-table,
+.v-data-table>.v-data-table__wrapper>table  {
+  background-color: var(--DarkBackground) !important;
+}
+.theme--dark.v-btn.v-btn--has-bg,
+.theme--dark.v-tabs>.v-tabs-bar,
+.theme--dark.v-window>.v-window__container {
+  background-color: var(--DarkBackground);
+}
+
+
+/* Sheets */
+.theme--dark.v-sheet {
+  background-color: var(--Sheets);
+}
+.v-toolbar__content, .v-toolbar__extension {
+  background-color: var(--Toolbars);
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+
+
+/* vCard / subtitle text color */
+.theme--dark.v-card .v-card__subtitle, .theme--dark.v-card>.v-card__text {
+  color: var(--DarkerText);
+}
+.v-card {
+  border-radius: var(--BorderRadius) !important;
+}
+
+
+/* Green elements */
+.v-application .green--text,
+.v-application .green--text.text--darken-1 {
+  color: var(--Green) !important;
+  caret-color: var(--Green) !important;
+}
+.v-application .green {
+  background-color: var(--Green) !important;
+  border-color: var(--Green) !important;
+}
+.v-toast__item--success {
+  background-color: var(--Green) !important;
+  color: #000 !important;
+}
+
+
+/* Warnings / orange elements */
+.v-application button.warning {
+  background: var(--Warnings) !important;
+  background-color: var(--Warnings) !important;
+  border-color: var(--Warnings) !important;
+}
+.theme--dark.warning--text {
+  color: var(--Warnings) !important;
+}
+.v-toast__item--warning {
+  background-color: var(--Warnings) !important;
+}
+.v-application .orange {
+  background: var(--Warnings) !important;
+  background-color: var(--Warnings) !important;
+}
+
+
+/* Red elements */
+.v-application .red,
+.v-application .error {
+  background-color: var(--Red) !important;
+  border-color: var(--Red) !important;
+}
+.v-application .red--text.text--darken-1,
+.v-application .red--text {
+  color: var(--Red) !important;
+  caret-color: var(--Red) !important;
+}
+.v-toast__item--error{
+  background-color: var(--Red) !important;
+}
+
+/* Buttons */
+.v-btn-toggle>.v-btn.v-btn {
+  opacity: 1;
+}
+.theme--dark.v-btn--active:before,
+.theme--dark.v-btn.v-btn--disabled.v-btn--has-bg {
+  opacity: 1;
+  background-color: var(--Toolbars) !important;
+}
+.v-btn--disabled span.v-btn__content {
+  color: hsla(0,0%,100%,.3)!important
+}
+.v-list-item--active::before,
+.v-list-item:hover::before {
+  background-color: #313244;
+}
+
+/* Ripple */
+.v-ripple__container {
+  color: 
+}
